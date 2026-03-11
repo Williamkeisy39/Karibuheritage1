@@ -399,13 +399,13 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-10">
               {/* Animated Title */}
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <div className="overflow-hidden">
                   <h1 
                     key={`title-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 font-[family-name:var(--font-libre)]"
                   >
                     {heroSlides[currentSlide].title}
                   </h1>
@@ -413,7 +413,7 @@ export default function Home() {
                 <div className="overflow-hidden">
                   <h2 
                     key={`subtitle-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 delay-100"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 delay-100 font-[family-name:var(--font-libre)]"
                   >
                     {heroSlides[currentSlide].subtitle}
                   </h2>
@@ -421,7 +421,7 @@ export default function Home() {
                 <div className="overflow-hidden">
                   <h2 
                     key={`desc-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-400 animate-in slide-in-from-bottom-4 duration-700 delay-200"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-400 animate-in slide-in-from-bottom-4 duration-700 delay-200 font-[family-name:var(--font-libre)]"
                   >
                     {heroSlides[currentSlide].description}
                   </h2>
@@ -460,17 +460,17 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="flex gap-8 pt-4">
+              <div className="flex gap-8 pt-6">
                 <div>
-                  <div className="text-3xl font-bold text-white">500+</div>
+                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">500+</div>
                   <div className="text-sm text-white/60">Families Relocated</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white">15+</div>
+                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">15+</div>
                   <div className="text-sm text-white/60">Countries</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white">98%</div>
+                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">98%</div>
                   <div className="text-sm text-white/60">Satisfaction</div>
                 </div>
               </div>
@@ -497,7 +497,7 @@ export default function Home() {
         </div>
 
         {/* Side Navigation Arrows */}
-        <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
+        <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20 lg:translate-x-[280px]">
           <button 
             onClick={prevSlide}
             className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all hover:scale-110"
