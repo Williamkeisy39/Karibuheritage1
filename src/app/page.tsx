@@ -381,7 +381,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden bg-slate-900">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900">
         {/* Background Slideshow with Ken Burns Effect */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 animate-kenBurns">
@@ -396,16 +396,16 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-10">
+            <div className="space-y-8">
               {/* Animated Title */}
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div className="overflow-hidden">
                   <h1 
                     key={`title-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 font-[family-name:var(--font-libre)]"
+                    className="text-3xl md:text-4xl lg:text-5xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 font-[family-name:var(--font-libre)] leading-tight"
                   >
                     {heroSlides[currentSlide].title}
                   </h1>
@@ -413,7 +413,7 @@ export default function Home() {
                 <div className="overflow-hidden">
                   <h2 
                     key={`subtitle-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 delay-100 font-[family-name:var(--font-libre)]"
+                    className="text-3xl md:text-4xl lg:text-5xl font-bold text-white animate-in slide-in-from-bottom-4 duration-700 delay-100 font-[family-name:var(--font-libre)] leading-tight"
                   >
                     {heroSlides[currentSlide].subtitle}
                   </h2>
@@ -421,7 +421,7 @@ export default function Home() {
                 <div className="overflow-hidden">
                   <h2 
                     key={`desc-${currentSlide}`}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-400 animate-in slide-in-from-bottom-4 duration-700 delay-200 font-[family-name:var(--font-libre)]"
+                    className="text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-400 animate-in slide-in-from-bottom-4 duration-700 delay-200 font-[family-name:var(--font-libre)] leading-tight"
                   >
                     {heroSlides[currentSlide].description}
                   </h2>
@@ -432,7 +432,7 @@ export default function Home() {
               <div className="w-24 h-1 bg-emerald-500 rounded-full" />
 
               {/* Description */}
-              <p className="text-lg text-white/80 max-w-xl leading-relaxed">
+              <p className="text-base md:text-lg text-white/80 max-w-xl leading-relaxed">
                 Your trusted partner for seamless relocation to Kenya, medical tourism, and international transitions. 
                 We specialize in helping individuals and families make Kenya their new home.
               </p>
@@ -460,17 +460,17 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="flex gap-8 pt-6">
+              <div className="flex gap-8 pt-4">
                 <div>
-                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">500+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white font-[family-name:var(--font-libre)]">500+</div>
                   <div className="text-sm text-white/60">Families Relocated</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">15+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white font-[family-name:var(--font-libre)]">15+</div>
                   <div className="text-sm text-white/60">Countries</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white font-[family-name:var(--font-libre)]">98%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white font-[family-name:var(--font-libre)]">98%</div>
                   <div className="text-sm text-white/60">Satisfaction</div>
                 </div>
               </div>
@@ -497,7 +497,7 @@ export default function Home() {
         </div>
 
         {/* Side Navigation Arrows */}
-        <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20 lg:translate-x-[280px]">
+        <div className="absolute right-4 md:right-8 bottom-24 flex flex-row gap-3 z-20">
           <button 
             onClick={prevSlide}
             className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all hover:scale-110"
