@@ -388,7 +388,7 @@ export default function Home() {
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ 
-                backgroundImage: `url('/images/Nai.jpg')`,
+                backgroundImage: `url('/images/nai.jpg')`,
               }}
             />
           </div>
