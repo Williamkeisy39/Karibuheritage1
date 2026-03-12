@@ -31,18 +31,18 @@ export default function TeamPage() {
   const team = [
     {
       name: "John Tugai",
-      role: "Director / CEO",
+      role: "Managing Director - Kenya, Head Quarter",
       image: "/images/john-tugai.jpeg"
     },
     {
-      name: "Sarah Mutua",
-      role: "Operations Manager",
-      image: "/images/10877.jpg"
+      name: "Fernand Tchikounzi",
+      role: "Director - New York, USA",
+      image: ""
     },
     {
-      name: "Dr. James Ochieng",
-      role: "Medical Tourism Director",
-      image: "/images/2151202441.jpg"
+      name: "Tony Awe",
+      role: "Director - Europe",
+      image: "/images/Tony Awe - Director- Europe.jpeg"
     }
   ];
 
@@ -158,13 +158,21 @@ export default function TeamPage() {
                 className="group bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 hover:bg-white/15 transition-all duration-300"
               >
                 <div className="h-64 overflow-hidden">
-                  <motion.img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover object-top"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.4 }}
-                  />
+                  {member.image ? (
+                    <motion.img 
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.4 }}
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-emerald-800/50 flex items-center justify-center">
+                      <svg className="w-24 h-24 text-emerald-300/40" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold mb-1">{member.name}</h3>

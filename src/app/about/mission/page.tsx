@@ -477,7 +477,7 @@ export default function MissionPage() {
               Fill in your details and we&apos;ll get back to you within 24 hours.
             </DialogDescription>
           </DialogHeader>
-          <form action="https://formspree.io/f/xreypjkq" method="POST" className="space-y-4 mt-4">
+          <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <Label htmlFor="name">Full Name</Label>
               <Input id="name" placeholder="John Doe" />
@@ -491,7 +491,7 @@ export default function MissionPage() {
               <Select id="service" placeholder="Select a service">
                 <option value="relocation">International Relocation</option>
                 <option value="investment">Global Investment</option>
-                <option value="medical">Medical Tourism</option>
+                <option value="medical">Tourism</option>
                 <option value="experiences">Cultural Experiences</option>
                 <option value="veteran">Veteran Support</option>
                 <option value="humanitarian">Humanitarian Support</option>

@@ -105,18 +105,27 @@ export default function Home() {
   const heroSlides = [
     {
       title: "Relocate to Kenya",
-      subtitle: "Made Simple",
-      description: "Your Gateway Home"
+      subtitle: "With Confidence.",
+      description: "Trusted Support",
+      image: "/images/745804416.jpeg"
     },
     {
       title: "Discover Kenya",
       subtitle: "Live & Invest",
-      description: "In East Africa"
+      description: "In East Africa",
+      image: "/images/giraffes-nairobi-skyline-city-national-park.jpeg"
     },
     {
       title: "Trusted Kenya",
       subtitle: "Relocation Experts",
-      description: "Personalized Support"
+      description: "Personalized Support",
+      image: "/images/Luxe-tribes-Kenya-2023-4186.jpeg"
+    },
+    {
+      title: "Experience Kenya",
+      subtitle: "Safari & Beach",
+      description: "Unforgettable Moments",
+      image: "/images/Diani-Hotels-1-scaled.webp"
     }
   ];
 
@@ -139,7 +148,7 @@ export default function Home() {
       dropdownItems: [
         { name: "Relocation", href: "/services/relocation" },
         { name: "Investment", href: "/services/investment" },
-        { name: "Medical Tourism", href: "/services/medical" },
+        { name: "Tourism", href: "/services/medical" },
         { name: "Experiences", href: "/services/experiences" },
         { name: "Humanitarian", href: "/services/humanitarian" },
         { name: "Veteran Support", href: "/services/veteran" }
@@ -180,10 +189,10 @@ export default function Home() {
       link: "/services/cares"
     },
     {
-      image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-      title: "Medical Tourism",
-      description: "Access to quality healthcare abroad through our network of internationally accredited facilities.",
-      features: ["Specialist Referrals", "Treatment Coordination", "Recovery Support", "Travel Assistance"],
+      image: "/images/Kenya-Safari.webp",
+      title: "Tourism",
+      description: "Experience Kenya's breathtaking safaris, wildlife, and cultural heritage through our curated tourism programs.",
+      features: ["Safari Packages", "Wildlife Tours", "Cultural Experiences", "Travel Assistance"],
       link: "/services/medical"
     },
     {
@@ -246,9 +255,9 @@ export default function Home() {
     {
       id: 4,
       name: "Dr. Amina Hassan",
-      location: "Medical Tourism to Kenya",
+      location: "Tourism in Kenya",
       rating: 5,
-      text: "The medical tourism program to Kenya exceeded my expectations. From specialist referrals to recovery support, everything was handled with utmost care. Karibu Heritage truly understands healthcare in Kenya.",
+      text: "The tourism program to Kenya exceeded my expectations. From safari planning to wildlife encounters, everything was handled with utmost care. Karibu Heritage truly understands tourism in Kenya.",
       image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80"
     }
   ];
@@ -384,14 +393,21 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900">
         {/* Background Slideshow with Ken Burns Effect */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 animate-kenBurns">
-            <div 
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ 
-                backgroundImage: `url('/images/nai.jpg')`,
-              }}
-            />
-          </div>
+          {heroSlides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="absolute inset-0 animate-kenBurns">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url('${slide.image}')` }}
+                />
+              </div>
+            </div>
+          ))}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
         </div>
 
@@ -433,30 +449,28 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-base md:text-lg text-white/80 max-w-xl leading-relaxed">
-                Your trusted partner for seamless relocation to Kenya, medical tourism, and international transitions. 
-                We specialize in helping individuals and families make Kenya their new home.
+                Trusted relocation and investment support for Americans and Europeans moving to Kenya.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact">
+                <Link href="/services">
                   <Button 
                     size="lg" 
                     className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-6 text-base font-semibold rounded-full shadow-lg shadow-emerald-900/25 transition-all hover:shadow-xl hover:shadow-emerald-900/30 hover:-translate-y-0.5"
                   >
-                    Get in Touch
+                    Start Your Relocation Plan
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link href="/services">
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
-                    className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 hover:text-emerald-300 px-8 py-6 text-base rounded-full backdrop-blur-sm font-semibold"
-                  >
-                    Learn More
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-emerald-400/50 text-emerald-400 hover:bg-emerald-400/10 hover:text-emerald-300 px-8 py-6 text-base rounded-full backdrop-blur-sm font-semibold"
+                  onClick={() => setIsConsultationOpen(true)}
+                >
+                  Book a Free Consultation
+                </Button>
               </div>
 
               {/* Stats */}
@@ -549,7 +563,7 @@ export default function Home() {
                   }
                 }}
               >
-                {"Investigate. Relocate to Kenya. Invest & Medical Tourism".split(" ").map((word, index) => (
+                {"Investigate. Relocate to Kenya. Invest & Tourism".split(" ").map((word, index) => (
                   <motion.span
                     key={index}
                     variants={{
@@ -573,7 +587,7 @@ export default function Home() {
               </motion.h2>
               
               <p className="text-slate-600 leading-relaxed">
-                Karibu Heritage is a relocation, medical tourism, and global services company specializing in helping individuals, families, veterans, and global clients relocate to Kenya. We provide comprehensive support for navigating life in Kenya, healthcare access, investment opportunities, and culturally grounded experiences.
+                Karibu Heritage is a relocation, tourism, and global services company specializing in helping individuals, families, veterans, and global clients relocate to Kenya. We provide comprehensive support for navigating life in Kenya, safari experiences, investment opportunities, and culturally grounded experiences.
               </p>
               
               <p className="font-medium text-slate-900">We coordinate:</p>
@@ -586,7 +600,7 @@ export default function Home() {
                   </Link>
                   <Link href="/services/medical" className="group flex items-center gap-2 cursor-pointer">
                     <ChevronRight className="w-4 h-4 text-emerald-600 transition-transform group-hover:translate-x-1" />
-                    <span className="text-slate-700 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-emerald-600 after:transition-all group-hover:after:w-full">Medical Tourism</span>
+                    <span className="text-slate-700 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-emerald-600 after:transition-all group-hover:after:w-full">Tourism</span>
                   </Link>
                   <Link href="/services/experiences" className="group flex items-center gap-2 cursor-pointer">
                     <ChevronRight className="w-4 h-4 text-emerald-600 transition-transform group-hover:translate-x-1" />
@@ -690,7 +704,7 @@ export default function Home() {
               
               {/* Description */}
               <p className="text-emerald-100/80 text-base mb-8 leading-relaxed">
-                Through structured travel programs, relocation guidance to Kenya, investment insight, and medical tourism support. Karibu Heritage helps individuals and families make informed, confident decisions when relocating to Kenya.
+                Through structured travel programs, relocation guidance to Kenya, investment insight, and tourism support. Karibu Heritage helps individuals and families make informed, confident decisions when relocating to Kenya.
               </p>
               
               {/* Button */}
@@ -892,7 +906,7 @@ export default function Home() {
                       Fill in your details and we'll get back to you within 24 hours.
                     </DialogDescription>
                   </DialogHeader>
-                  <form action="https://formspree.io/f/xreypjkq" method="POST" className="space-y-4 py-4">
+                  <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 py-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">First Name</label>
@@ -934,7 +948,7 @@ export default function Home() {
                         <option value="relocation">International Relocation</option>
                         <option value="investment">Global Investment</option>
                         <option value="experiences">Cultural Experiences</option>
-                        <option value="medical">Medical Tourism</option>
+                        <option value="medical">Tourism</option>
                         <option value="veteran">Veteran Support</option>
                         <option value="cares">KARIBU C.A.R.E.S</option>
                       </select>
@@ -1007,22 +1021,22 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/blog/kenya-medical-tourism-destination">
+            <Link href="/blog/kenya-tourism-destination">
               <Card className="overflow-hidden border-slate-200 group cursor-pointer h-full">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80" 
-                    alt="Medical tourism in Kenya"
+                    src="/images/Kenya-Safari.webp" 
+                    alt="Tourism in Kenya"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                   />
                 </div>
                 <CardContent className="p-6">
-                  <Badge variant="outline" className="mb-3 border-emerald-200 text-emerald-700">Medical Tourism</Badge>
+                  <Badge variant="outline" className="mb-3 border-emerald-200 text-emerald-700">Tourism</Badge>
                   <h3 className="font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">
-                    Why Kenya is Becoming a Top Medical Tourism Destination
+                    Why Kenya is Becoming a Top Tourism Destination
                   </h3>
                   <p className="text-slate-600 text-sm mb-4">
-                    World-class healthcare facilities and affordable treatments in beautiful settings.
+                    Discover Kenya's stunning wildlife, national parks, and safari experiences in breathtaking settings.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-slate-500">
                     <Clock className="w-4 h-4" />

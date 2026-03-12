@@ -10,10 +10,10 @@ import Navigation from "@/components/navigation";
 const blogPosts = [
   {
     id: 1,
-    title: "Why Kenya is Becoming a Top Destination for Medical Tourism",
-    excerpt: "Explore the world-class healthcare facilities, affordable treatments, and the unique combination of quality care and recovery in beautiful settings.",
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-    category: "Medical Tourism",
+    title: "Why Kenya is Becoming a Top Tourism Destination",
+    excerpt: "Explore Kenya's world-renowned safaris, stunning wildlife parks, and the unique combination of adventure and relaxation in beautiful settings.",
+    image: "/images/Kenya-Safari.webp",
+    category: "Tourism",
     author: "Dr. James Otieno",
     date: "March 1, 2026",
     readTime: "6 min read",
@@ -24,7 +24,7 @@ const blogPosts = [
     title: "Top Hospitals and Medical Centers in Kenya",
     excerpt: "A comprehensive guide to the best healthcare facilities in Nairobi, Mombasa, and other major cities for international patients.",
     image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
-    category: "Medical Tourism",
+    category: "Tourism",
     author: "Dr. Mercy Njeri",
     date: "February 22, 2026",
     readTime: "8 min read",
@@ -35,7 +35,7 @@ const blogPosts = [
     title: "Dental Tourism in Kenya: Quality Care at Affordable Prices",
     excerpt: "Why international patients are choosing Kenya for dental procedures, from implants to cosmetic dentistry.",
     image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80",
-    category: "Medical Tourism",
+    category: "Tourism",
     author: "Dr. Peter Kimani",
     date: "February 15, 2026",
     readTime: "5 min read",
@@ -58,7 +58,7 @@ export default function MedicalTourismCategoryPage() {
         >
           <img 
             src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=80"
-            alt="Medical Tourism"
+            alt="Tourism in Kenya"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-emerald-900/60" />
@@ -101,7 +101,7 @@ export default function MedicalTourismCategoryPage() {
             <Badge className="bg-emerald-500/80 text-white mb-4 backdrop-blur-sm">Category</Badge>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-6 leading-tight">
-              Medical Tourism
+              Tourism
             </h1>
             
             <p className="text-white/70 text-sm md:text-base max-w-2xl leading-relaxed">
@@ -115,7 +115,7 @@ export default function MedicalTourismCategoryPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-slate-900">Medical Tourism Articles</h2>
+            <h2 className="text-2xl font-bold text-slate-900">Tourism Articles</h2>
             <p className="text-slate-600 mt-1">{blogPosts.length} articles found</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

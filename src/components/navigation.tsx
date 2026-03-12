@@ -24,7 +24,7 @@ const navItems = [
       { name: "All Services", href: "/services" },
       { name: "Relocation", href: "/services/relocation" },
       { name: "Investment", href: "/services/investment" },
-      { name: "Medical Tourism", href: "/services/medical" },
+      { name: "Tourism", href: "/services/medical" },
       { name: "Experiences", href: "/services/experiences" },
       { name: "Humanitarian", href: "/services/humanitarian" },
       { name: "Veteran Support", href: "/services/veteran" }
@@ -44,7 +44,7 @@ const searchableContent = [
   { title: "Services", href: "/services", description: "All our services" },
   { title: "Relocation", href: "/services/relocation", description: "International relocation to Kenya" },
   { title: "Investment", href: "/services/investment", description: "Investment opportunities in Kenya" },
-  { title: "Medical Tourism", href: "/services/medical", description: "Medical tourism to Kenya" },
+  { title: "Tourism", href: "/services/medical", description: "Tourism in Kenya" },
   { title: "Experiences", href: "/services/experiences", description: "Cultural experiences in Kenya" },
   { title: "Humanitarian", href: "/services/humanitarian", description: "Humanitarian support services" },
   { title: "Veteran Support", href: "/services/veteran", description: "Veteran transition services" },

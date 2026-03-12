@@ -272,7 +272,7 @@ export default function ContactPage() {
                           <option value="">Select a subject...</option>
                           <option value="relocation">Relocation Services</option>
                           <option value="investment">Investment Opportunities</option>
-                          <option value="medical">Medical Tourism</option>
+                          <option value="medical">Tourism</option>
                           <option value="general">General Inquiry</option>
                         </select>
                       </div>

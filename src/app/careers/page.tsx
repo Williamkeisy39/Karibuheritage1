@@ -23,13 +23,13 @@ const staggerContainer = {
 const jobs = [
   {
     id: 1,
-    title: "Medical Tourism Coordinator",
-    department: "Medical Tourism",
+    title: "Tourism Coordinator",
+    department: "Tourism",
     location: "Nairobi, Kenya",
     type: "Full-time",
-    description: "Coordinate medical tourism experiences for international patients. Manage hospital partnerships, travel logistics, and patient care coordination.",
+    description: "Coordinate tourism experiences for international visitors. Manage safari partnerships, travel logistics, and guest experience coordination.",
     requirements: [
-      "2+ years experience in healthcare administration or medical tourism",
+      "2+ years experience in tourism or hospitality",
       "Knowledge of Kenya's healthcare system",
       "Strong organizational and multitasking abilities",
       "Empathy and excellent patient care skills",

@@ -44,7 +44,7 @@ export default function StoryPage() {
     {
       year: "2021",
       title: "Expanding Services",
-      description: "Added medical tourism and investment consulting to our portfolio, becoming a full-service relocation company.",
+      description: "Added tourism and investment consulting to our portfolio, becoming a full-service relocation company.",
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80"
     },
     {

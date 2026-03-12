@@ -226,7 +226,7 @@ export default function VeteranService() {
               Fill in your details and we&apos;ll get back to you within 24 hours.
             </DialogDescription>
           </DialogHeader>
-          <form action="https://formspree.io/f/xreypjkq" method="POST" className="space-y-4 mt-4">
+          <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Full Name</label>
               <input 
@@ -249,7 +249,7 @@ export default function VeteranService() {
                 <option value="">Select a service...</option>
                 <option value="relocation">International Relocation</option>
                 <option value="veteran" selected>Veteran Support</option>
-                <option value="medical">Medical Tourism</option>
+                <option value="medical">Tourism</option>
                 <option value="experiences">Cultural Experiences</option>
               </select>
             </div>

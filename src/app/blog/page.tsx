@@ -22,10 +22,10 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Why Kenya is Becoming a Top Destination for Medical Tourism",
-    excerpt: "Explore the world-class healthcare facilities, affordable treatments, and the unique combination of quality care and recovery in beautiful settings.",
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-    category: "Medical Tourism",
+    title: "Why Kenya is Becoming a Top Tourism Destination",
+    excerpt: "Explore Kenya's world-renowned safaris, stunning wildlife parks, and the unique combination of adventure and relaxation in beautiful settings.",
+    image: "/images/Kenya-Safari.webp",
+    category: "Tourism",
     author: "Dr. James Otieno",
     date: "March 1, 2026",
     readTime: "6 min read",
@@ -80,7 +80,7 @@ const blogPosts = [
 const categories = [
   { name: "All", slug: "all" },
   { name: "Relocation", slug: "relocation" },
-  { name: "Medical Tourism", slug: "medical-tourism" },
+  { name: "Tourism", slug: "medical-tourism" },
   { name: "Investment", slug: "investment" },
   { name: "Travel", slug: "travel" },
   { name: "Lifestyle", slug: "lifestyle" },
@@ -90,7 +90,7 @@ const categories = [
 const categoryLinks: Record<string, string> = {
   "All": "/blog",
   "Relocation": "/blog/category/relocation",
-  "Medical Tourism": "/blog/category/medical-tourism",
+  "Tourism": "/blog/category/medical-tourism",
   "Investment": "/blog/category/investment",
   "Travel": "/blog/category/travel",
   "Lifestyle": "/blog/category/lifestyle",

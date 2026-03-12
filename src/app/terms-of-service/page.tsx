@@ -71,7 +71,7 @@ export default function TermsOfServicePage() {
             <ul className="list-disc pl-6 text-slate-600 mb-6 space-y-2">
               <li>International relocation assistance to Kenya</li>
               <li>Global investment consulting</li>
-              <li>Medical tourism coordination</li>
+              <li>Tourism coordination</li>
               <li>Cultural experiences and travel planning</li>
               <li>Veteran support services</li>
               <li>Humanitarian support services</li>

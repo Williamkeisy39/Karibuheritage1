@@ -57,36 +57,36 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Why Kenya is Becoming a Top Destination for Medical Tourism",
-    excerpt: "Explore the world-class healthcare facilities, affordable treatments, and the unique combination of quality care and recovery in beautiful settings.",
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-    category: "Medical Tourism",
+    title: "Why Kenya is Becoming a Top Tourism Destination",
+    excerpt: "Explore Kenya's world-renowned safaris, stunning wildlife parks, and the unique combination of adventure and relaxation in beautiful settings.",
+    image: "/images/Kenya-Safari.webp",
+    category: "Tourism",
     author: "Dr. James Otieno",
     date: "March 1, 2026",
     readTime: "6 min read",
     slug: "kenya-medical-tourism-destination",
     content: `
-      <p>Kenya is rapidly emerging as a premier destination for medical tourism, combining world-class healthcare with the opportunity for recovery in one of the world's most beautiful countries. This growing sector is attracting patients from across Africa, Europe, and beyond.</p>
+      <p>Kenya is rapidly emerging as a premier tourism destination, combining world-class safari experiences with stunning landscapes and rich cultural heritage. This growing sector is attracting visitors from across Africa, Europe, and beyond.</p>
       
-      <h2>World-Class Healthcare Facilities</h2>
-      <p>Kenya's private hospitals rival those in developed countries, with state-of-the-art equipment and internationally trained medical professionals. Facilities like the Aga Khan University Hospital, Nairobi Hospital, and MP Shah Hospital hold international accreditations and offer specialized treatments across all medical disciplines.</p>
+      <h2>World-Renowned Safari Destinations</h2>
+      <p>Kenya's national parks and reserves are among the finest in the world. The Maasai Mara, Amboseli, Tsavo, and Samburu offer unparalleled wildlife viewing opportunities, including the famous Big Five and the Great Migration.</p>
       
-      <h2>Affordable Quality Care</h2>
-      <p>One of the primary drivers of medical tourism to Kenya is cost. Medical procedures in Kenya can cost 60-80% less than in Western countries, without compromising on quality. This affordability extends to dental care, cosmetic procedures, and specialized surgeries.</p>
+      <h2>Affordable Adventure</h2>
+      <p>One of the primary drivers of tourism to Kenya is value. Safari packages in Kenya offer incredible experiences at competitive prices compared to other destinations, without compromising on quality. This affordability extends to beach holidays, cultural tours, and adventure activities.</p>
       
-      <h2>Specialized Treatment Centers</h2>
-      <p>Kenya has developed centers of excellence in various medical fields including oncology, cardiology, orthopedics, and fertility treatments. The country's ophthalmology and dental care sectors are particularly renowned for their expertise.</p>
+      <h2>Diverse Experiences</h2>
+      <p>Kenya offers diverse tourism experiences from savannah safaris to tropical beaches, mountain trekking on Mount Kenya, cultural encounters with the Maasai, and vibrant city life in Nairobi. The country's coastline along the Indian Ocean is particularly renowned for its pristine beaches.</p>
       
-      <h2>Recovery in Paradise</h2>
-      <p>What sets Kenya apart is the opportunity to combine medical treatment with recovery in a beautiful, relaxing environment. Patients can recuperate on pristine beaches, in serene highland retreats, or near world-famous wildlife reserves.</p>
+      <h2>Natural Paradise</h2>
+      <p>What sets Kenya apart is the incredible diversity of landscapes. Visitors can experience snow-capped mountains, vast savannahs, tropical forests, and pristine beaches all within one trip.</p>
       
-      <h2>Seamless Medical Tourism Services</h2>
-      <p>Companies like Karibu Heritage specialize in coordinating every aspect of medical tourism, from initial consultations to post-treatment care. This includes travel arrangements, accommodation, hospital appointments, and even tourism activities for accompanying family members.</p>
+      <h2>Seamless Tourism Services</h2>
+      <p>Companies like Karibu Heritage specialize in coordinating every aspect of tourism, from safari planning to beach holidays. This includes travel arrangements, accommodation, guided tours, and culturally immersive experiences.</p>
       
       <h2>Growing International Recognition</h2>
-      <p>Kenya's medical tourism sector is gaining international recognition, with the government investing in healthcare infrastructure and promoting the country as a medical hub. The combination of English-speaking medical staff, modern facilities, and African hospitality creates a unique value proposition.</p>
+      <p>Kenya's tourism sector continues to gain international recognition, with the government investing in conservation and infrastructure. The combination of English-speaking guides, modern lodges, and authentic African hospitality creates a unique value proposition.</p>
       
-      <p>Whether you need a routine procedure or specialized treatment, Kenya offers an attractive combination of quality healthcare, affordability, and the chance to experience one of the world's most captivating countries.</p>
+      <p>Whether you seek a wildlife safari or a beach retreat, Kenya offers an attractive combination of adventure, relaxation, and the chance to experience one of the world's most captivating countries.</p>
     `,
   },
   {

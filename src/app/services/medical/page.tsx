@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, CheckCircle, Stethoscope, Hospital, Plane, Shield, Users, Clock, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle, Stethoscope, Hospital, Plane, Shield, Users, Clock, ChevronRight, Mountain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Navigation from "@/components/navigation";
@@ -17,19 +17,19 @@ import {
 export default function MedicalService() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const features = [
-    { icon: <Stethoscope className="w-6 h-6" />, title: "Specialist Referrals", description: "Access to top medical specialists and consultants across Kenya's leading hospitals." },
-    { icon: <Hospital className="w-6 h-6" />, title: "Hospital Coordination", description: "Seamless booking and coordination with internationally accredited healthcare facilities." },
+    { icon: <Stethoscope className="w-6 h-6" />, title: "Safari Planning", description: "Access to Kenya's top safari destinations and wildlife reserves with expert-curated itineraries." },
+    { icon: <Hospital className="w-6 h-6" />, title: "Lodge & Camp Coordination", description: "Seamless booking and coordination with Kenya's finest safari lodges and tented camps." },
     { icon: <Plane className="w-6 h-6" />, title: "Travel Logistics", description: "Complete travel arrangements including flights, accommodation, and local transportation." },
-    { icon: <Shield className="w-6 h-6" />, title: "Insurance Support", description: "Assistance with medical insurance verification and claims processing." },
-    { icon: <Users className="w-6 h-6" />, title: "Companion Support", description: "Arrangements for family member accommodation and support during your treatment." },
-    { icon: <Clock className="w-6 h-6" />, title: "Recovery Planning", description: "Post-treatment care coordination and recovery facility arrangements." },
+    { icon: <Shield className="w-6 h-6" />, title: "Travel Insurance", description: "Assistance with travel insurance verification and coverage for your safari adventure." },
+    { icon: <Users className="w-6 h-6" />, title: "Group & Family Safaris", description: "Tailored safari experiences for families, groups, and solo travelers exploring Kenya." },
+    { icon: <Clock className="w-6 h-6" />, title: "Custom Itineraries", description: "Personalized tour planning and multi-destination safari route arrangements." },
   ];
 
-  const hospitals = [
-    { name: "Aga Khan Hospital", location: "Nairobi", specialty: "Multi-specialty" },
-    { name: "Nairobi Hospital", location: "Nairobi", specialty: "Advanced Care" },
-    { name: "Mombasa Hospital", location: "Mombasa", specialty: "Coastal Healthcare" },
-    { name: "Tenwek Hospital", location: "Bomet", specialty: "Mission Hospital" },
+  const destinations = [
+    { name: "Maasai Mara", location: "Narok County", specialty: "Big Five Safari" },
+    { name: "Amboseli National Park", location: "Kajiado", specialty: "Elephant Herds & Kilimanjaro Views" },
+    { name: "Diani Beach", location: "South Coast", specialty: "Beach & Marine Life" },
+    { name: "Lake Nakuru", location: "Nakuru", specialty: "Flamingos & Wildlife" },
   ];
 
   return (
@@ -45,8 +45,8 @@ export default function MedicalService() {
           transition={{ duration: 10, ease: "easeOut" }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?w=1920&q=80"
-            alt="Medical Tourism"
+            src="/images/Kenya-Safari.webp"
+            alt="Tourism in Kenya"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-emerald-900/60" />
@@ -78,10 +78,10 @@ export default function MedicalService() {
             className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Medical Tourism to Kenya
+              Tourism in Kenya
             </h1>
             <p className="text-xl text-white/80 max-w-2xl">
-              World-class healthcare meets Kenyan hospitality. Access quality medical care at a fraction of the cost.
+              World-class safari experiences meet Kenyan hospitality. Discover breathtaking wildlife and landscapes.
             </p>
           </motion.div>
         </div>
@@ -92,10 +92,10 @@ export default function MedicalService() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Comprehensive Medical Tourism Services
+              Comprehensive Tourism Services
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              From diagnosis to recovery, we coordinate every aspect of your medical journey to Kenya.
+              From planning to departure, we coordinate every aspect of your safari and tourism journey in Kenya.
             </p>
           </div>
 
@@ -118,22 +118,22 @@ export default function MedicalService() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Partner Healthcare Facilities
+              Top Safari Destinations
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              We partner with Kenya's leading hospitals and medical centers to provide you with the best care.
+              We connect you with Kenya's most iconic safari destinations and wildlife experiences.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {hospitals.map((hospital, index) => (
+            {destinations.map((dest, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                 <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-700 mb-4">
-                  <Hospital className="w-6 h-6" />
+                  <Mountain className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-1">{hospital.name}</h3>
-                <p className="text-emerald-600 text-sm mb-1">{hospital.location}</p>
-                <p className="text-slate-500 text-sm">{hospital.specialty}</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-1">{dest.name}</h3>
+                <p className="text-emerald-600 text-sm mb-1">{dest.location}</p>
+                <p className="text-slate-500 text-sm">{dest.specialty}</p>
               </div>
             ))}
           </div>
@@ -146,16 +146,16 @@ export default function MedicalService() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Why Choose Medical Tourism in Kenya?
+                Why Choose Tourism in Kenya?
               </h2>
               <div className="space-y-4">
                 {[
-                  "Significant cost savings compared to Western countries",
-                  "Internationally accredited healthcare facilities",
-                  "Highly qualified medical professionals",
-                  "Minimal waiting times for procedures",
-                  "Combine treatment with recovery in beautiful locations",
-                  "English-speaking medical staff",
+                  "World-renowned safari destinations and wildlife reserves",
+                  "Diverse landscapes from savannahs to tropical beaches",
+                  "Rich cultural heritage and Maasai experiences",
+                  "Year-round wildlife viewing opportunities",
+                  "Combine safari adventures with beach relaxation",
+                  "English-speaking professional guides",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -166,8 +166,8 @@ export default function MedicalService() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80"
-                alt="Modern hospital facility in Kenya"
+                src="/images/Amboseli.webp"
+                alt="Safari in Kenya"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
@@ -179,10 +179,10 @@ export default function MedicalService() {
       <section className="py-24 bg-emerald-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-            Begin Your Medical Journey to Kenya
+            Begin Your Safari Journey in Kenya
           </h2>
           <p className="text-lg text-slate-600 mb-8">
-            Contact our medical tourism specialists to discuss your healthcare needs and start planning your trip.
+            Contact our tourism specialists to discuss your safari plans and start planning your trip.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact">
@@ -207,12 +207,12 @@ export default function MedicalService() {
       <Dialog open={isConsultationOpen} onOpenChange={setIsConsultationOpen}>
         <DialogContent className="sm:max-w-md bg-white">
           <DialogHeader>
-            <DialogTitle className="text-xl font-bold text-emerald-900">Book Your Medical Tourism Consultation</DialogTitle>
+            <DialogTitle className="text-xl font-bold text-emerald-900">Book Your Tourism Consultation</DialogTitle>
             <DialogDescription className="text-slate-600">
               Fill in your details and we&apos;ll get back to you within 24 hours.
             </DialogDescription>
           </DialogHeader>
-          <form action="https://formspree.io/f/xreypjkq" method="POST" className="space-y-4 mt-4">
+          <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Full Name</label>
               <input 
@@ -233,7 +233,7 @@ export default function MedicalService() {
               <label className="text-sm font-medium text-slate-700">Service Interest</label>
               <select className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
                 <option value="">Select a service...</option>
-                <option value="medical" selected>Medical Tourism</option>
+                <option value="medical" selected>Tourism</option>
                 <option value="relocation">International Relocation</option>
                 <option value="investment">Global Investment</option>
                 <option value="experiences">Cultural Experiences</option>
@@ -244,7 +244,7 @@ export default function MedicalService() {
               <textarea 
                 rows={3}
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
-                placeholder="Tell us about your medical needs..."
+                placeholder="Tell us about your safari plans..."
               />
             </div>
             <Button 

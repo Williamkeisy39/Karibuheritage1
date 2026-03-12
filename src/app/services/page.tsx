@@ -47,8 +47,8 @@ const services = [
   },
   {
     number: "05.",
-    title: "Medical Tourism",
-    description: "Certified medical tourism facilitation connecting international patients with accredited hospitals in Kenya through safe, structured, and confidential coordination.",
+    title: "Tourism",
+    description: "Curated tourism experiences connecting visitors with Kenya's world-renowned safaris, wildlife parks, and cultural heritage through safe, structured, and personalized coordination.",
     href: "/services/medical"
   },
   {
@@ -166,7 +166,7 @@ export default function ServicesPage() {
             </motion.h1>
             
             <p className="text-white/70 text-sm md:text-base max-w-2xl leading-relaxed">
-              Karibu Heritage Limited delivers professional relocation, transition, medical tourism, cultural, and global client services through a structured, assessment-led approach. Each service is designed to support informed decision-making, responsible engagement, and sustainable outcomes.
+              Karibu Heritage Limited delivers professional relocation, transition, tourism, cultural, and global client services through a structured, assessment-led approach. Each service is designed to support informed decision-making, responsible engagement, and sustainable outcomes.
             </p>
           </motion.div>
         </div>
