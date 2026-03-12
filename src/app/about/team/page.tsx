@@ -37,7 +37,7 @@ export default function TeamPage() {
     {
       name: "Fernand Tchikounzi",
       role: "Director - New York, USA",
-      image: ""
+      image: "/images/ceotwo.jpg"
     },
     {
       name: "Tony Awe",
