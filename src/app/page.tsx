@@ -542,7 +542,7 @@ export default function Home() {
             {/* Left - Image */}
             <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80"
+                src="/images/zebra.jpg"
                 alt="African family at airport with luggage"
                 className="absolute inset-0 w-full h-full object-cover"
               />
