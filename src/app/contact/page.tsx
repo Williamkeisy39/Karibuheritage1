@@ -142,7 +142,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Phone</p>
-                      <p className="text-white font-medium">+254 712 470341</p>
+                      <p className="text-white font-medium">+254141119444</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -173,7 +173,7 @@ export default function ContactPage() {
               animate="animate"
             >
               {[
-                { icon: <Phone className="w-5 h-5" />, title: "Phone", info: "+254 712 470341", sub: "Mon-Fri 9am-6pm EAT" },
+                { icon: <Phone className="w-5 h-5" />, title: "Phone", info: "+254141119444", sub: "Mon-Fri 9am-6pm EAT" },
                 { icon: <Mail className="w-5 h-5" />, title: "Email", info: "info@karibuheritage.com", sub: "We reply within 24 hours" },
                 { icon: <MapPin className="w-5 h-5" />, title: "Office", info: "Westlands, Nairobi", sub: "Kenya" },
                 { icon: <Clock className="w-5 h-5" />, title: "Working Hours", info: "Monday - Friday", sub: "9:00 AM - 6:00 PM EAT" },

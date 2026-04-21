@@ -146,7 +146,7 @@ export default function TermsOfServicePage() {
             </p>
             <ul className="list-disc pl-6 text-slate-600 mb-6 space-y-2">
               <li>Email: info@karibuheritage.com</li>
-              <li>Phone: +254 712 470341</li>
+              <li>Phone: +254141119444</li>
               <li>Address: Westlands, Nairobi, Kenya</li>
             </ul>
 

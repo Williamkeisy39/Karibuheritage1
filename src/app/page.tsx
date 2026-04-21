@@ -860,7 +860,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Call Us</p>
-                    <p className="font-bold text-slate-900">+254 712 470341</p>
+                    <p className="font-bold text-slate-900">+254141119444</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">

@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>+254 712 470341</li>
+              <li>+254141119444</li>
               <li>info@karibuheritage.com</li>
               <li>Westlands, Nairobi</li>
             </ul>
