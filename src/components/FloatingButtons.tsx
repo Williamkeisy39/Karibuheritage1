@@ -31,7 +31,7 @@ export default function FloatingButtons() {
       {/* Floating Action Buttons */}
       {/* WhatsApp Button - Left Side */}
       <a
-        href="https://wa.me/254712470341?text=Hello%20Karibu%20Heritage%2C%20I%20am%20interested%20in%20relocation%20services%20to%20Kenya"
+        href="https://wa.me/254141119444?text=Hello%20Karibu%20Heritage%2C%20I%20am%20interested%20in%20relocation%20services%20to%20Kenya"
         target="_blank"
         rel="noopener noreferrer"
         className={`fixed bottom-6 left-6 z-50 flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 ${showButtons ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
