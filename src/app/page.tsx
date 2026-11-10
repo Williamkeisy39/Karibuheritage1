@@ -910,7 +910,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">First Name</label>
-                        <input 
+                        <input name="firstName" 
                           type="text" 
                           className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                           placeholder="John"
@@ -918,7 +918,7 @@ export default function Home() {
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">Last Name</label>
-                        <input 
+                        <input name="lastName" 
                           type="text" 
                           className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                           placeholder="Doe"
@@ -927,7 +927,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Email</label>
-                      <input 
+                      <input name="email" 
                         type="email" 
                         className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                         placeholder="john@example.com"
@@ -935,7 +935,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Phone</label>
-                      <input 
+                      <input name="phone" 
                         type="tel" 
                         className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                         placeholder="+254..."
@@ -943,7 +943,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Service Interest</label>
-                      <select className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white">
+                      <select name="service" className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white">
                         <option value="">Select a service...</option>
                         <option value="relocation">International Relocation</option>
                         <option value="investment">Global Investment</option>
@@ -955,7 +955,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-slate-700">Message</label>
-                      <textarea 
+                      <textarea name="message" 
                         rows={3}
                         className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
                         placeholder="Tell us about your needs..."

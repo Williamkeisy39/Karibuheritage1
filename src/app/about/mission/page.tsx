@@ -480,15 +480,15 @@ export default function MissionPage() {
           <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <Label htmlFor="name">Full Name</Label>
-              <Input id="name" placeholder="John Doe" />
+              <Input name="name" id="name" placeholder="John Doe" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="john@example.com" />
+              <Input name="email" id="email" type="email" placeholder="john@example.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="service">Service Interest</Label>
-              <Select id="service" placeholder="Select a service">
+              <Select name="service" id="service" placeholder="Select a service">
                 <option value="relocation">International Relocation</option>
                 <option value="investment">Global Investment</option>
                 <option value="medical">Tourism</option>
@@ -499,7 +499,7 @@ export default function MissionPage() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="message">Message</Label>
-              <Textarea id="message" placeholder="Tell us about your needs..." />
+              <Textarea name="message" id="message" placeholder="Tell us about your needs..." />
             </div>
             <Button 
               type="submit" 

@@ -215,7 +215,7 @@ export default function MedicalService() {
           <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Full Name</label>
-              <input 
+              <input name="name" 
                 type="text" 
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder="John Doe"
@@ -223,7 +223,7 @@ export default function MedicalService() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Email</label>
-              <input 
+              <input name="email" 
                 type="email" 
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder="john@example.com"
@@ -231,7 +231,7 @@ export default function MedicalService() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Service Interest</label>
-              <select className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+              <select name="service" className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
                 <option value="">Select a service...</option>
                 <option value="medical" selected>Tourism</option>
                 <option value="relocation">International Relocation</option>
@@ -241,7 +241,7 @@ export default function MedicalService() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Message</label>
-              <textarea 
+              <textarea name="message" 
                 rows={3}
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
                 placeholder="Tell us about your safari plans..."

@@ -184,7 +184,7 @@ export default function JourneyPage() {
               
               {/* Floating Card */}
               <motion.div 
-                className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl max-w-xs"
+                className="absolute -bottom-6 right-2 lg:-right-6 bg-white rounded-xl p-6 shadow-xl max-w-xs"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -425,7 +425,7 @@ export default function JourneyPage() {
           <form action="https://formspree.io/f/xlgpbgqv" method="POST" className="space-y-4 mt-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Full Name</label>
-              <input 
+              <input name="name" 
                 type="text" 
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder="John Doe"
@@ -433,7 +433,7 @@ export default function JourneyPage() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Email</label>
-              <input 
+              <input name="email" 
                 type="email" 
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder="john@example.com"
@@ -441,7 +441,7 @@ export default function JourneyPage() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Service Interest</label>
-              <select className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+              <select name="service" className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
                 <option value="">Select a service...</option>
                 <option value="relocation">International Relocation</option>
                 <option value="investment">Global Investment</option>
@@ -453,7 +453,7 @@ export default function JourneyPage() {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700">Message</label>
-              <textarea 
+              <textarea name="message" 
                 rows={3}
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
                 placeholder="Tell us about your needs..."

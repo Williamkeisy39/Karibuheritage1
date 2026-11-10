@@ -46,7 +46,7 @@ export default function ContactPage() {
       <Navigation />
       
       {/* Hero Section with Glassmorphism */}
-      <section className="relative min-h-[50vh] flex items-center pt-20">
+      <section className="relative overflow-hidden min-h-[50vh] flex items-center pt-20">
         <motion.div 
           className="absolute inset-0 z-0"
           initial={{ scale: 1.1 }}

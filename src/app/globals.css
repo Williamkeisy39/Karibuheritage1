@@ -143,3 +143,7 @@
 .animate-kenBurns {
   animation: kenBurns 20s ease-in-out infinite;
 }
+/* Prevent stray horizontal scroll on small screens */
+html, body {
+  overflow-x: clip;
+}

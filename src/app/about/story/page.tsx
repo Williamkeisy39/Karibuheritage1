@@ -185,7 +185,7 @@ export default function StoryPage() {
               </motion.div>
               
               <motion.div 
-                className="absolute -bottom-6 -right-6 bg-emerald-600 text-white rounded-xl p-6 shadow-xl max-w-xs"
+                className="absolute -bottom-6 right-2 lg:-right-6 bg-emerald-600 text-white rounded-xl p-6 shadow-xl max-w-xs"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
